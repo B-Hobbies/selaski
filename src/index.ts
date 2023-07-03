@@ -33,9 +33,9 @@
   /**
    * Checks if an array contains only the numbers 0 to 9 without repetitions.
    * @param keypad Keypad.
-   * @returns Boolean | Never
+   * @returns Boolean
    */
-  function validateKeypad(keypad: number[]): boolean | never {
+  function validateKeypad(keypad: number[]): boolean {
     const uniqueNumbers = new Set(keypad); // Create a set to remove duplicates
     // 
     if (uniqueNumbers.size !== 10) return false
